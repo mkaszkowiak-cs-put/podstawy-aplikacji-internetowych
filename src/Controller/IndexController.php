@@ -41,7 +41,8 @@ class IndexController extends AbstractController
 
         $errors = $validator->validate($user);
 
-        
+        throw new \Exception("Błąd. Skąd on się wziął?");
+
 
         if (count($errors) > 0) {
             $errorMessages = [];
